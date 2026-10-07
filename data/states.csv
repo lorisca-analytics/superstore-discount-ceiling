@@ -1,0 +1,5 @@
+state,sales,profit,avg_discount_pct,note
+Texas,170188,-25729,37.0,"#3 by sales; loses money"
+California,457688,76381,7.0,"#1 by sales; 17% margin"
+ALL_LOSS_MAKING_STATES_10,,,28.0,"Every one of the 10 loss-making states averages above 28% discount"
+ALL_PROFITABLE_STATES_39,,,20.0,"Not one of the 39 profitable states averages above 20% discount"

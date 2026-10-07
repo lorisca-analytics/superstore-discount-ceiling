@@ -1,0 +1,14 @@
+sub_category,sales,profit,margin_pct,orders,avg_discount_pct,note
+Phones,330007,,,,"Best seller by sales"
+Chairs,328000,,,,"#2 by sales"
+Copiers,,55618,37.0,68,"Highest profit; fewest orders"
+Tables,206966,-17725,-8.6,,"#4 by sales; loses money; 63.6% of line items unprofitable"
+Binders,,14.9,,1316,"Most-ordered; 37.2% avg discount"
+Bookcases,,-3473,,,Loses money outright
+Supplies,,-1189,,,Loses money outright
+Paper,,43.0,,,"Fund: high margin, small base"
+Accessories,,25.0,,,"Fund: high margin, small base"
+Labels,,44.0,,,"Fund: high margin, small base"
+Envelopes,,42.0,,,"Fund: high margin, small base"
+Machines,,2.0,,,"Stop: ~2% margin"
+Storage,,8.0,,,"Fix pricing first: thin margin"
