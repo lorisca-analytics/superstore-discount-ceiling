@@ -5,7 +5,8 @@ read the business through sales volume. This dashboard makes the case for
 spending it elsewhere — and lets the room test the recommendation live.
 
 Built in Tableau for Hult's Data Visualization course (QTM-6032R). Graded
-**100/100**. [Live on Tableau Public](https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1)
+**100/100**. What it demonstrates: turning analysis into a decision a room
+can act on — the bridge between the technical work and the business language. [Live on Tableau Public](https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1)
 · [Interactive dashboard](https://lorisca-analytics.github.io/superstore-discount-ceiling/dashboard/)
 
 ![Dashboard](assets/dashboard.png)
