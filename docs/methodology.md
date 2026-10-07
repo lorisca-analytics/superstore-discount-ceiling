@@ -24,26 +24,32 @@ dataset.
   measure) was considered and cut — it's navigation, not argument, and this
   piece is a recommendation.
 
-## Interactions (5, against a 2 minimum)
+## Interactions (4 in the live workbook, against a 2 minimum)
 
 1. **Filter action** — click a sub-category; scatter, discount chart and map
-   filter to it.
+   filter to it. (Known scoping quirk — see QA notes.)
 2. **Highlight action** — hover a scatter point; the sub-category lights up on
    the bar chart and scatter. Scoped to sheets containing Sub-Category only.
 3. **Profit Target parameter** — slider (−$20K to $60K) driving a reference
    line plus the `Above Target?` calculation (`SUM(Profit) >= Profit Target`),
    recolouring the scatter blue/orange.
-4. **Discount Ceiling parameter** — slider (0–80%) feeding `Within Discount
-   Ceiling` (`[Discount] <= [Discount Ceiling]`), applied as a filter across
-   all sheets. The recommendation made testable: the reader performs the
-   discount cap instead of taking the report's number on trust.
-5. **Highlighter** — type-ahead search for a sub-category by name.
+4. **Highlighter** — type-ahead search for a sub-category by name.
+
+### Post-submission prototype: Discount Ceiling parameter
+
+Built after submission to make the recommendation testable: a slider (0–80%)
+feeding `Within Discount Ceiling` (`[Discount] <= [Discount Ceiling]`),
+applied as a filter across all sheets. At 20%: profit $286,397 → $421,773
+(+$135,376, +47%), margin 12.5% → 21.8%, 86% of orders and 84% of sales
+retained. It is not in the published workbook — the numbers are the verified
+analysis, and the parameter is the honest "what I'd build next".
 
 ## Calculated fields
 
 - `Above Target?` — `SUM(Profit) >= [Profit Target]`
 - `Profit or Loss` — `IF SUM(Profit) >= 0 THEN 'Profit' ELSE 'Loss' END`
 - `Within Discount Ceiling` — `[Discount] <= [Discount Ceiling]`
+  (post-submission prototype — not in the published workbook)
 - `Margin` — `SUM(Profit) / SUM(Sales)`
 - `State Code` — 49-state name→postal-code mapping (see below)
 
@@ -108,12 +114,19 @@ END
 
 ## QA notes
 
-- Story point 5 was found pinned to a Tables filter while its caption argues
-  for Paper/Copiers/Accessories — cleared before submission.
-- Filter action re-scoped so the bar chart stays whole when a sub-category is
-  clicked (source: the two sub-category charts; targets: everything except the
-  bar chart).
-- Story sized to the dashboard (1366 × 900) to kill scrollbars.
+Findings from the pre-submission QA pass — recorded as found, not as fixed.
+I checked the published workbook's XML on Oct 7 and both of these are still
+in it, so they ship here as known issues with their fixes:
+
+- Story point 5 is pinned to a saved Tables filter while its caption argues
+  for Paper/Copiers/Accessories. Fix: open Story 1 → point 5 → click an empty
+  area → Update.
+- The filter action ("Click Sub-Category to filter") is sourced from the
+  whole dashboard and passes All Fields, so clicking a bar also filters the
+  bar chart itself. Fix: re-scope the source to the two sub-category charts
+  and untick "Sales by Sub-Category" as a target.
+- The highlight action is correctly scoped (scatter → bar + scatter; excludes
+  the map and the discount chart).
 
 ## Limitations & next steps
 
@@ -125,8 +138,8 @@ this dataset, not a law of retail.
 **What I'd do with real data.** Control for the promo calendar and category
 mix before trusting the ceiling; check whether the line survives once those
 are held constant. Then pilot the cap on one bleeding sub-category (Tables)
-as a holdout test before rolling it out — the dashboard's Discount Ceiling
-slider is the prototype of that test.
+as a holdout test before rolling it out — the Discount Ceiling prototype above
+is the shape of that test.
 
 **How I'd roll it out.** Phase 1: cap at 20% on Tables and Binders, watch
 margin weekly with order volume as the guardrail (the model says we keep 86%
