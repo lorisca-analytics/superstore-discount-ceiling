@@ -24,9 +24,12 @@ at or below 20% the business earns +$422K; above 20% it loses −$135K. The
 states confirm it independently — average discount and margin correlate at
 r = −0.98.
 
-**Machine.** A dashboard with live parameters. Drag the discount ceiling to
-20% and watch profit move from $286K to $422K (+47%) while keeping 86% of
-orders. The reader performs the policy instead of taking the number on trust.
+**Machine.** The ceiling as a testable number. The analysis verifies it two
+ways — the discount ladder (+$422K at or below 20%, −$135K above) and the
+state map (r = −0.98) — and a Discount Ceiling slider prototyped after
+submission lets a reader perform the cap instead of taking the number on
+trust. The live workbook ships four interactions: filter, highlight, Profit
+Target, highlighter.
 
 ## The case, in STAR
 
@@ -39,10 +42,10 @@ picture across the USA. Dataset: 9,994 order lines, 17 sub-categories,
 200–500 word management report with findings and recommendations.
 
 **Action.** Four linked views — sales bar, sales-vs-profit scatter, discount
-ladder, state map — driven by five interactions: a filter action, a hover
-highlight, a Profit Target parameter with reference line, a Discount Ceiling
-what-if parameter, and a type-ahead highlighter. A five-point Tableau Story
-walks the argument: what sells → selling ≠ earning → the discount cause →
+ladder, state map — driven by four interactions: a filter action, a hover
+highlight, a Profit Target parameter with reference line, and a type-ahead
+highlighter. A Discount Ceiling what-if slider was prototyped after submission
+(see methodology). A five-point Tableau Story walks the argument: what sells → selling ≠ earning → the discount cause →
 the map proof → Fund / Fix / Stop. Colour rule throughout: blue = profit,
 orange = loss, readable for red-green colour blindness.
 
