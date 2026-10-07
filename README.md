@@ -2,7 +2,7 @@
 
 A marketing analytics lead has an ad budget and a room full of managers who
 read the business through sales volume. This dashboard makes the case for
-spending it somewhere else — and lets the room test the recommendation live.
+spending it elsewhere — and lets the room test the recommendation live.
 
 Built in Tableau for Hult's Data Visualization course (QTM-6032R). Graded
 **100/100**. [Live on Tableau Public](https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1)
