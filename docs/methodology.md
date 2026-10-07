@@ -114,3 +114,22 @@ END
   clicked (source: the two sub-category charts; targets: everything except the
   bar chart).
 - Story sized to the dashboard (1366 × 900) to kill scrollbars.
+
+## Limitations & next steps
+
+**What the data can't prove.** Superstore is sample data with suspiciously
+clean discount steps (0/10/15/20/30/…). Real promo data is messier — stacked
+coupons, category-wide events, clearance. The 20% line is a finding about
+this dataset, not a law of retail.
+
+**What I'd do with real data.** Control for the promo calendar and category
+mix before trusting the ceiling; check whether the line survives once those
+are held constant. Then pilot the cap on one bleeding sub-category (Tables)
+as a holdout test before rolling it out — the dashboard's Discount Ceiling
+slider is the prototype of that test.
+
+**How I'd roll it out.** Phase 1: cap at 20% on Tables and Binders, watch
+margin weekly with order volume as the guardrail (the model says we keep 86%
+of orders — verify it). Phase 2: extend to Storage and Chairs once pricing is
+fixed. Phase 3: re-point the ad budget at the Fund list and measure
+incremental margin, not clicks.
