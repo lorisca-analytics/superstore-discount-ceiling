@@ -53,7 +53,7 @@ Supplies. Capping discounts at 20% lifts profit 47% on its own.
 
 ## How it works
 
-- [`dashboard/`](dashboard/) — the dashboard as a static page.
+- [`dashboard/`](dashboard/) — the five-point story as a click-through walkthrough (one idea per view, like the Tableau Story).
 - [`docs/analysis.md`](docs/analysis.md) — the five story points, one idea
   each, with the verified numbers.
 - [`docs/business-report.md`](docs/business-report.md) — the 407-word
