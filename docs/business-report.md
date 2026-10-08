@@ -1,6 +1,6 @@
 # Business report: where should we spend the next advertising dollar?
 
-*The 407-word management report as submitted. Graded 100/100.*
+*The 407-word management report.*
 
 Leadership currently reads this business through sales volume, and by that
 measure the picture looks healthy. The company turned over $2,297,201 across

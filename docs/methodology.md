@@ -4,7 +4,7 @@ How the workbook is built, and what was checked.
 
 ## Data
 
-`Hult – Superstore.xlsx`, sheet `Orders`: 9,994 order lines, 2016–2019, USA.
+Superstore sample workbook, sheet `Orders`: 9,994 order lines, 2016–2019, USA.
 Reconciled three times against the build: **$2,297,201 sales, $286,397 profit.**
 Same file throughout — the numbers in `analysis.md` all trace to it.
 
@@ -35,9 +35,9 @@ dataset.
    recolouring the scatter blue/orange.
 4. **Highlighter** — type-ahead search for a sub-category by name.
 
-### Post-submission prototype: Discount Ceiling parameter
+### Post-publication prototype: Discount Ceiling parameter
 
-Built after submission to make the recommendation testable: a slider (0–80%)
+Built after the workbook was published to make the recommendation testable: a slider (0–80%)
 feeding `Within Discount Ceiling` (`[Discount] <= [Discount Ceiling]`),
 applied as a filter across all sheets. At 20%: profit $286,397 → $421,773
 (+$135,376, +47%), margin 12.5% → 21.8%, 86% of orders and 84% of sales
@@ -49,7 +49,7 @@ analysis, and the parameter is the honest "what I'd build next".
 - `Above Target?` — `SUM(Profit) >= [Profit Target]`
 - `Profit or Loss` — `IF SUM(Profit) >= 0 THEN 'Profit' ELSE 'Loss' END`
 - `Within Discount Ceiling` — `[Discount] <= [Discount Ceiling]`
-  (post-submission prototype — not in the published workbook)
+  (post-publication prototype — not in the published workbook)
 - `Margin` — `SUM(Profit) / SUM(Sales)`
 - `State Code` — 49-state name→postal-code mapping (see below)
 
@@ -114,7 +114,7 @@ END
 
 ## QA notes
 
-Findings from the pre-submission QA pass — recorded as found, not as fixed.
+Findings from the pre-publication QA pass — recorded as found, not as fixed.
 I checked the published workbook's XML on Oct 7 and both of these are still
 in it, so they ship here as known issues with their fixes:
 

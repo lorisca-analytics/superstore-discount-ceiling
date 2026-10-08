@@ -1,7 +1,7 @@
 # Data
 
-Summary tables only. Figures are aggregates verified against the course dataset
-(`Hult – Superstore.xlsx`: 9,994 order lines, 2016–2019, USA) during the build —
+Summary tables only. Figures are aggregates verified against the source dataset
+(Superstore sample workbook: 9,994 order lines, 2016–2019, USA) during the build —
 see `docs/methodology.md` for the reconciliation notes.
 
 The row-level data lives inside the published Tableau workbook extract:
