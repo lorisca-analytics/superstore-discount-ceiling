@@ -4,8 +4,7 @@ A marketing analytics lead has an ad budget and a room full of managers who
 read the business through sales volume. This dashboard makes the case for
 spending it elsewhere — and lets the room test the recommendation live.
 
-Built in Tableau for Hult's Data Visualization course (QTM-6032R). Graded
-**100/100**. What it demonstrates: turning analysis into a decision a room
+Built in Tableau. What it demonstrates: turning analysis into a decision a room
 can act on — the bridge between the technical work and the business language. [Live on Tableau Public](https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1)
 · [Interactive dashboard](https://lorisca-analytics.github.io/superstore-discount-ceiling/dashboard/)
 
@@ -71,4 +70,3 @@ Sample data, disclosed as such — the value is the mechanism, not the dataset.
 ## Links
 
 - Live workbook (Tableau Public): https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1
-- Course: Data Visualization (QTM-6032R), Hult International Business School
