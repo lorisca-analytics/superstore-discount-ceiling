@@ -2,6 +2,3 @@
 Thumbs.db
 .vscode/
 .idea/
-# Tableau working files
-*.twbr
-*.tmp
