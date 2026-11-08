@@ -53,6 +53,12 @@ Accessories (25%), Labels (44%), Envelopes (42%); **fix pricing first** on
 Binders, Storage, Chairs; **stop** funding Tables, Bookcases, Machines,
 Supplies. Capping discounts at 20% lifts profit 47% on its own.
 
+## How to view
+
+- **Live workbook:** the full Tableau Story on [Tableau Public](https://public.tableau.com/app/profile/lorisca.cessia.tuuk/viz/A1_EXTRACT_v3/Story1).
+- **Interactive walkthrough:** [the five-point story in the browser](https://lorisca-analytics.github.io/superstore-discount-ceiling/dashboard/).
+- **Offline:** clone the repo and open `dashboard/index.html` in any browser. It is one self-contained file with no build step and no network calls.
+
 ## How it works
 
 - [`dashboard/`](dashboard/): the five-point story as a click-through walkthrough (one idea per view, like the Tableau Story).
